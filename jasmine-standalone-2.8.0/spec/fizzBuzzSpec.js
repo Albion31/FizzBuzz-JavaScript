@@ -33,9 +33,15 @@ describe("FizzBuzz", function() {
     it("prints 'Buzz' when given 10", function(){
       expect(fizzBuzz.game(10)).toEqual('Buzz')
     });
-
   });
 
+  describe("is divisible by 15", function(){
+
+    it("prints 'Fizzbuzz' when given 15", function(){
+      expect(fizzBuzz.game(15)).toEqual('FizzBuzz')
+    });
+    
+  });
 
 
 
