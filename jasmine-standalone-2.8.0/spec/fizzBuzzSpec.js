@@ -40,9 +40,8 @@ describe("FizzBuzz", function() {
     it("prints 'Fizzbuzz' when given 15", function(){
       expect(fizzBuzz.game(15)).toEqual('FizzBuzz')
     });
-    
+    it("prints 'Fizzbuzz' when given 30", function(){
+      expect(fizzBuzz.game(30)).toEqual('FizzBuzz')
+    });
   });
-
-
-
 });
