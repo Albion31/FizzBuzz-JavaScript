@@ -1,7 +1,7 @@
 function FizzBuzz() {
   FizzBuzz.prototype.game = function(number) {
     // (number === 3) ? return "Fizz" : return number;
-    if (number === 15) {
+    if (number % 15 === 0) {
       return "FizzBuzz"
     }
     else if (number % 3 === 0) {
