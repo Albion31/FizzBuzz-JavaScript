@@ -10,8 +10,8 @@ describe("FizzBuzz", function() {
     it("prints '1' when given 1", function() {
       expect(fizzBuzz.game(1)).toEqual(1)
     });
-    it("prints '99' when given 99", function() {
-      expect(fizzBuzz.game(99)).toEqual(99)
+    it("prints '4' when given 4", function() {
+      expect(fizzBuzz.game(4)).toEqual(4)
     });
   });
 
@@ -24,4 +24,16 @@ describe("FizzBuzz", function() {
       expect(fizzBuzz.game(6)).toEqual('Fizz')
     });
   });
+
+  describe("is divisible by 5", function() {
+
+    it("prints 'Buzz' when given 5", function(){
+      expect(fizzBuzz.game(5)).toEqual('Buzz')
+    });
+    
+  });
+
+
+
+
 });
