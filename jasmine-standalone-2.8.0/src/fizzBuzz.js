@@ -1,17 +1,22 @@
 function FizzBuzz() {
+
   FizzBuzz.prototype.game = function(number) {
     // (number === 3) ? return "Fizz" : return number;
-    if (number % 15 === 0) {
+    if (this._isDivisibleBy(15, number)) {
       return "FizzBuzz"
     }
-    else if (number % 3 === 0) {
+    else if (this._isDivisibleBy(3, number)) {
       return "Fizz"
     }
-    else if (number % 5 === 0) {
+    else if (this._isDivisibleBy(5, number)) {
       return "Buzz"
     }
     else {
       return number
     };
   };
+};
+
+FizzBuzz.prototype._isDivisibleBy = function(divisibleBy, numberGiven){
+  return numberGiven % divisibleBy === 0
 };
