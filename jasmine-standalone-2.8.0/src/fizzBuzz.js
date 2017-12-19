@@ -1,7 +1,6 @@
 function FizzBuzz() {
 
   FizzBuzz.prototype.game = function(number) {
-    // (number === 3) ? return "Fizz" : return number;
     if (this._isDivisibleBy(15, number)) {
       return "FizzBuzz"
     }
@@ -17,6 +16,11 @@ function FizzBuzz() {
   };
 };
 
-FizzBuzz.prototype._isDivisibleBy = function(divisibleBy, numberGiven){
+FizzBuzz.prototype._isDivisibleBy = function(divisibleBy, numberGiven) {
   return numberGiven % divisibleBy === 0
+};
+
+var fizzBuzz = new FizzBuzz();
+for (i = 1; i <= 100; i++) {
+  console.log(fizzBuzz.game(i))
 };
