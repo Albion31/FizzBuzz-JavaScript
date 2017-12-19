@@ -3,7 +3,11 @@ function FizzBuzz() {
     // (number === 3) ? return "Fizz" : return number;
     if (number % 3 === 0) {
       return "Fizz"
-    } else {
+    }
+    else if (number === 5) {
+      return "Buzz"
+    }
+    else {
       return number
     };
   };

@@ -30,7 +30,10 @@ describe("FizzBuzz", function() {
     it("prints 'Buzz' when given 5", function(){
       expect(fizzBuzz.game(5)).toEqual('Buzz')
     });
-    
+    it("prints 'Buzz' when given 10", function(){
+      expect(fizzBuzz.game(10)).toEqual('Buzz')
+    });
+
   });
 
 
