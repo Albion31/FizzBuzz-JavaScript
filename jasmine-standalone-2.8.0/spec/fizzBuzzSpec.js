@@ -20,5 +20,8 @@ describe("FizzBuzz", function() {
     it("prints 'Fizz' when given 3", function() {
       expect(fizzBuzz.game(3)).toEqual('Fizz')
     });
+    it("prints 'Fizz' when given 6", function() {
+      expect(fizzBuzz.game(6)).toEqual('Fizz')
+    });
   });
 });
