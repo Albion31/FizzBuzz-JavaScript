@@ -1,5 +1,5 @@
 function FizzBuzz() {
-  FizzBuzz.prototype.game = function() {
-    return 1
+  FizzBuzz.prototype.game = function(number) {
+    return number
   };
 };
