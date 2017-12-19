@@ -1,4 +1,5 @@
 function FizzBuzz() {
+};
 
   FizzBuzz.prototype.game = function(number) {
     if (this._isDivisibleBy(15, number)) {
@@ -14,7 +15,6 @@ function FizzBuzz() {
       return number
     };
   };
-};
 
 FizzBuzz.prototype._isDivisibleBy = function(divisibleBy, numberGiven) {
   return numberGiven % divisibleBy === 0
